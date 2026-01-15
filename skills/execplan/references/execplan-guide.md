@@ -106,6 +106,7 @@ Record every decision made while working on the plan in the format:
  
 - Decision: …
   Rationale: …
+  Date: 2025-10-01 13:00Z
  
 ## Outcomes & Retrospective
  
