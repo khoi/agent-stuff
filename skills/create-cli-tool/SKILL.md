@@ -1,6 +1,6 @@
 ---
 name: create-cli-tool
-description: Craft or refactor a CLI interface and behavior using the CLI Guidelines. Use when defining a new CLI spec or reshaping an existing command surface: arguments, flags, subcommands, help text, outputs, errors, exit codes, prompts, config/env precedence, and safe/dry-run behavior.
+description: Craft or refactor a CLI interface and behavior using the CLI Guidelines. Use when defining a new CLI spec or reshaping an existing command surface arguments, flags, subcommands, help text, outputs, errors, exit codes, prompts, config/env precedence, and safe/dry-run behavior.
 ---
 
 # Create CLI Tool
