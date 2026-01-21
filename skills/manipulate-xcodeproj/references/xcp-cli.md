@@ -12,6 +12,38 @@
 - For shell hex colors, quote `#RRGGBB` values because `#` starts a comment.
 - `list-targets --file` and `set-target` require the file to be a PBXFileReference. Files managed by File System Synchronized groups are not found unless added via `xcp add-file`.
 
+## Common recipes
+
+Add a new file and assign targets:
+
+```bash
+xcp add-file /path/App.xcodeproj --file /path/Sources/NewFile.swift --targets App --create-groups
+```
+
+Move a file while preserving target membership:
+
+```bash
+xcp move-file /path/App.xcodeproj --file /path/Old.swift --dest /path/New.swift
+```
+
+Rename a group:
+
+```bash
+xcp rename-group /path/App.xcodeproj --group /path/OldGroup --name NewGroup
+```
+
+Set a build setting across all targets/configs:
+
+```bash
+xcp set-build-setting /path/App.xcodeproj --key SWIFT_VERSION --value 5.9
+```
+
+Add an image asset:
+
+```bash
+xcp add-image-asset /path/Assets.xcassets --file /path/image.png --asset-path Icons/App --mode template
+```
+
 ## Targets
 
 List all targets:
